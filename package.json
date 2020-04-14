@@ -51,7 +51,15 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {},
+    "rules": {
+      "vue/script-indent": [
+        2,
+        2,
+        {
+          "baseIndent": 1
+        }
+      ]
+    },
     "overrides": [
       {
         "files": [
@@ -60,6 +68,12 @@
         ],
         "env": {
           "mocha": true
+        }
+      },
+      {
+        "files": ["*.vue"],
+        "rules": {
+          "indent": "off"
         }
       }
     ]
